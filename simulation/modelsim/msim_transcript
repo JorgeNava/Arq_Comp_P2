@@ -1,0 +1,74 @@
+# Reading pref.tcl
+# do Practica2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02 {D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/Practica2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:10:31 on Jun 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02" D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/Practica2.v 
+# -- Compiling module Practica2
+# 
+# Top level modules:
+# 	Practica2
+# End time: 23:10:31 on Jun 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02 {D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/ControlUnit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:10:31 on Jun 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02" D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/ControlUnit.v 
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 23:10:32 on Jun 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02 {D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:10:32 on Jun 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02" D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:10:32 on Jun 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02 {D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/finalTest.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:10:32 on Jun 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02" D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/finalTest.v 
+# -- Compiling module finalTest
+# 
+# Top level modules:
+# 	finalTest
+# End time: 23:10:32 on Jun 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  finalTest
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" finalTest 
+# Start time: 23:10:32 on Jun 08,2021
+# Loading work.finalTest
+# Loading work.top
+# Loading work.ControlUnit
+# Loading work.Practica2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position end  sim:/finalTest/tp/alu/Status
+add wave -position end  sim:/finalTest/tp/alu/R
+# Break key hit
+# Break in Module Practica2 at D:/UAG/9_Cuatrimestre/ArquitecturaDeComputadoras/Laboratory/P02/Practica2.v line 15
+# End time: 23:13:38 on Jun 08,2021, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 0

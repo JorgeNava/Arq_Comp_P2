@@ -1,0 +1,7 @@
+module top (
+	input [3:0] ubInputData,
+	input [3:0] ubCredential,
+	output LEDstatus,
+	output ubCounter
+);
+
